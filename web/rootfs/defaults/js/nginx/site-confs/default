@@ -2,7 +2,7 @@ server {
 	listen 80 default_server;
 
 	
-	include /config/nginx/meet.conf;
+	return 301 https://$host$request_uri;
 	
 }
 
