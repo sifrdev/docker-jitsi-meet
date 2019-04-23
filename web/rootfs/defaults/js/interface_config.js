@@ -13,8 +13,8 @@ var interfaceConfig = {
 
     INITIAL_TOOLBAR_TIMEOUT: 20000,
     TOOLBAR_TIMEOUT: 4000,
-    TOOLBAR_ALWAYS_VISIBLE: false,
-    DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow student',
+    TOOLBAR_ALWAYS_VISIBLE: true,
+    DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Student',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
     SHOW_JITSI_WATERMARK: false,
     JITSI_WATERMARK_LINK: 'https://jitsi.org',
@@ -22,20 +22,20 @@ var interfaceConfig = {
     // if watermark is disabled by default, it can be shown only for guests
     SHOW_WATERMARK_FOR_GUESTS: false,
     SHOW_BRAND_WATERMARK: false,
-    BRAND_WATERMARK_LINK: '',
+    BRAND_WATERMARK_LINK: 'https://www.sifr.no/wp-content/uploads/2017/11/sifr2-                                                                                                                        1.png',
     SHOW_POWERED_BY: false,
     SHOW_DEEP_LINKING_IMAGE: false,
     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
-    DISPLAY_WELCOME_PAGE_CONTENT: true,
-    APP_NAME: 'Opal Meet',
-    NATIVE_APP_NAME: 'Opal Meet',
+    DISPLAY_WELCOME_PAGE_CONTENT: false,
+    APP_NAME: 'Opal webinar',
+    NATIVE_APP_NAME: 'Opal webinar',
     LANG_DETECTION: false, // Allow i18n to detect the system language
     INVITATION_POWERED_BY: true,
 
     /**
      * If we should show authentication block in profile
      */
-    AUTHENTICATION_ENABLE: false,
+    AUTHENTICATION_ENABLE: true,
 
     /**
      * The name of the toolbar buttons to display in the toolbar. If present,
@@ -52,7 +52,7 @@ var interfaceConfig = {
         'tileview'
     ],
 
-    SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
+    SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calenda                                                                                                                        r' ],
 
     // Determines how the video would fit the screen. 'both' would fit the whole
     // screen, 'height' would fit the original video height to the height of the
@@ -182,12 +182,12 @@ var interfaceConfig = {
     /**
      * Specify custom URL for downloading android mobile app.
      */
-    // MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details?id=org.jitsi.meet',
+    // MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details                                                                                                                        ?id=org.jitsi.meet',
 
     /**
      * Specify URL for downloading ios mobile app.
      */
-    // MOBILE_DOWNLOAD_LINK_IOS: 'https://itunes.apple.com/us/app/jitsi-meet/id1165103905',
+    // MOBILE_DOWNLOAD_LINK_IOS: 'https://itunes.apple.com/us/app/jitsi-meet/id1                                                                                                                        165103905',
 
     /**
      * Specify mobile app scheme for opening the app from the mobile browser.
@@ -201,3 +201,4 @@ var interfaceConfig = {
 };
 
 /* eslint-enable no-unused-vars, no-var, max-len */
+

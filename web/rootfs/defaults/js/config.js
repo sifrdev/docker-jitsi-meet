@@ -16,35 +16,39 @@ var config = {
 
     hosts: {
         // XMPP domain.
-        domain: 'devmoe.sifr.no',
+        domain: 'meet.jitsi',
+//etherpad_base: 'https://devmoe.sifr.no:8443',
 
+//etherpad_base: 'http://91.189.123.106:8080/p/',
         // When using authentication, domain for guest users.
         // anonymousdomain: 'guest.example.com',
 
         // Domain for authenticated users. Defaults to <domain>.
-        // authdomain: 'jitsi-meet.example.com',
+        // authdomain: 'meet.jitsi',
 
         // Jirecon recording component domain.
-        // jirecon: 'jirecon.jitsi-meet.example.com',
+        // jirecon: 'jirecon.meet.jitsi',
 
         // Call control component (Jigasi).
-        // call_control: 'callcontrol.jitsi-meet.example.com',
+        // call_control: 'callcontrol.meet.jitsi',
 
         // Focus component domain. Defaults to focus.<domain>.
-        // focus: 'focus.jitsi-meet.example.com',
+        // focus: 'focus.meet.jitsi',
 
         // XMPP MUC domain. FIXME: use XEP-0030 to discover it.
-        muc: 'conference.devmoe.sifr.no'
+        muc: 'muc.meet.jitsi',
     },
 
     // BOSH URL. FIXME: use XEP-0156 to discover it.
-    bosh: '//devmoe.sifr.no/http-bind',
-
+    bosh: '/http-bind',
+    etherpad_base: 'https://meet.jit.si/etherpad/p/',
+//etherpad_base: 'https://devmoe.sifr.no:8443/p/',
     // The name of client node advertised in XEP-0115 'c' stanza
     clientNode: 'http://jitsi.org/jitsimeet',
 
     // The real JID of focus participant - can be overridden here
-    // focusUserJid: 'focus@auth.jitsi-meet.example.com',
+    focusUserJid: 'focus@auth.meet.jitsi',
+    enableCalendarIntegration: true,
 
 
     // Testing / experimental features.
@@ -170,24 +174,23 @@ var config = {
     // Recording
 
     // Whether to enable file recording or not.
-    // fileRecordingsEnabled: false,
+     fileRecordingsEnabled: false,
+
     // Enable the dropbox integration.
-    // dropbox: {
-    //     appKey: '<APP_KEY>' // Specify your app key here.
-    // },
+     dropbox: {
+         appKey: 'fnzn7jp6o2o1xqp' // Specify your app key here.
+     },
 
     // Whether to enable live streaming or not.
-    // liveStreamingEnabled: false,
+     liveStreamingEnabled: false,
 
     // Transcription (in interface_config,
     // subtitles and buttons can be configured)
-    // transcribingEnabled: false,
+     transcribingEnabled: true,
 
     // Misc
 
     // Default value for the channel "last N" attribute. -1 for unlimited.
-    channelLastN: -1,
-
     // Disables or enables RTX (RFC 4588) (defaults to false).
     // disableRtx: false,
 
@@ -232,7 +235,7 @@ var config = {
 
     // Whether to use a welcome page or not. In case it's false a random room
     // will be joined when no room is specified.
-    enableWelcomePage: true,
+    enableWelcomePage: false,
 
     // Enabling the close page will ignore the welcome page redirection when
     // a call is hangup.
@@ -359,20 +362,20 @@ var config = {
     // Local Recording
     //
 
-    // localRecording: {
+     //localRecording: {
     // Enables local recording.
     // Additionally, 'localrecording' (all lowercase) needs to be added to
     // TOOLBAR_BUTTONS in interface_config.js for the Local Recording
     // button to show up on the toolbar.
-    //
-    //     enabled: true,
+    //6
+       //  enabled: true,
     //
 
     // The recording format, can be one of 'ogg', 'flac' or 'wav'.
-    //     format: 'flac'
+         //format: 'flac'
     //
 
-    // }
+     //}
 
     // Options related to end-to-end (participant to participant) ping.
     // e2eping: {
@@ -447,4 +450,3 @@ var config = {
 
 };
 
-/* eslint-enable no-unused-vars, no-var */

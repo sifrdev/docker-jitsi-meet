@@ -9,6 +9,7 @@ services:
             - '${HTTPS_PORT}:443'
         volumes:
             - ${CONFIG}/web:/config
+            - ./web/rootfs/defaults/js/:/config
         environment:
             - ENABLE_AUTH
             - ENABLE_GUESTS
